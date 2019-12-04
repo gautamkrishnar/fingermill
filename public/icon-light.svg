@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="treadmillGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1"/>
+      <stop offset="100%" style="stop-color:#8b5cf6"/>
+    </linearGradient>
+    <linearGradient id="fingerGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e1e1e"/>
+      <stop offset="100%" style="stop-color:#3a3a3a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="256" cy="256" r="240" fill="#ffffff" stroke="#e5e7eb" stroke-width="4"/>
+
+  <!-- Treadmill belt -->
+  <rect x="80" y="320" width="352" height="60" rx="30" fill="url(#treadmillGrad)"/>
+
+  <!-- Treadmill belt lines (motion) -->
+  <line x1="120" y1="350" x2="160" y2="350" stroke="#ffffff" stroke-width="6" stroke-linecap="round" opacity="0.6"/>
+  <line x1="200" y1="350" x2="260" y2="350" stroke="#ffffff" stroke-width="6" stroke-linecap="round" opacity="0.6"/>
+  <line x1="300" y1="350" x2="380" y2="350" stroke="#ffffff" stroke-width="6" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Walking fingers -->
+  <!-- Finger 1 (index) - lifted -->
+  <path d="M160 300 L160 200 Q160 170 175 170 Q190 170 190 200 L190 280"
+        fill="none" stroke="url(#fingerGrad)" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Finger 2 (middle) - down -->
+  <path d="M240 320 L240 180 Q240 145 258 145 Q276 145 276 180 L276 320"
+        fill="none" stroke="url(#fingerGrad)" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Finger 3 (ring) - lifted -->
+  <path d="M340 300 L340 200 Q340 170 355 170 Q370 170 370 200 L370 280"
+        fill="none" stroke="url(#fingerGrad)" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Motion lines around fingers -->
+  <path d="M130 240 Q115 220 130 200" fill="none" stroke="#6366f1" stroke-width="4" stroke-linecap="round" opacity="0.7"/>
+  <path d="M400 240 Q415 220 400 200" fill="none" stroke="#6366f1" stroke-width="4" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- Speed lines -->
+  <line x1="90" y1="280" x2="60" y2="280" stroke="#6366f1" stroke-width="4" stroke-linecap="round" opacity="0.5"/>
+  <line x1="90" y1="300" x2="50" y2="300" stroke="#6366f1" stroke-width="4" stroke-linecap="round" opacity="0.5"/>
+  <line x1="90" y1="320" x2="60" y2="320" stroke="#6366f1" stroke-width="4" stroke-linecap="round" opacity="0.5"/>
+</svg>
