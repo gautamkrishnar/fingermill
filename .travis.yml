@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+  - 11
+script:
+  - npm run build
+deploy:
+  provider: pages
+  skip-cleanup: true
+  local_dir: public
+  committer-from-gh: true
+  keep-history: true
+  github-token:  $GH_PAT
+  on:
+    branch: production
+notifications:
+  email: false
