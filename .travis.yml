@@ -6,7 +6,7 @@ script:
   - npm run build
 deploy:
   provider: pages
-  cleanup: false
+  cleanup: true
   local_dir: public
   committer_from_gh: true
   keep_history: true
