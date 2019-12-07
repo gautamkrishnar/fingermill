@@ -1,15 +1,16 @@
 language: node_js
 node_js:
   - 11
+os: linux
 script:
   - npm run build
 deploy:
   provider: pages
-  skip-cleanup: true
+  cleanup: false
   local_dir: public
-  committer-from-gh: true
-  keep-history: true
-  github-token:  $GH_PAT
+  committer_from_gh: true
+  keep_history: true
+  token:  $GH_PAT
   on:
     branch: production
 notifications:
