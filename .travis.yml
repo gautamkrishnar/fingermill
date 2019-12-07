@@ -6,8 +6,8 @@ script:
   - npm run build
 deploy:
   provider: pages
-  cleanup: true
   local_dir: public
+  skip_cleanup: true
   committer_from_gh: true
   keep_history: true
   token:  $GH_PAT
